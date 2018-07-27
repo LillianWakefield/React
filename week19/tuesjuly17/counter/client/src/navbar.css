@@ -1,0 +1,36 @@
+nav.navbar {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 0 #ddd;
+    box-shadow: 0 1px 0 #ddd;
+    display: flex;
+    justify-content: center;
+  }
+  
+.nav-link {
+    color: #777;
+    font-style: italic;
+    border-bottom: 1px solid transparent;
+    padding: 0.5rem 1rem;
+  }
+  
+.nav-link.active, .nav-link:hover {
+    color: #333;
+  }
+  
+ .nav-link.active {
+    border-bottom: 1px solid #333;
+  }
+  
+  
+  nav.navbar.sticky {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 999;
+  }
+  
+
+  
+  

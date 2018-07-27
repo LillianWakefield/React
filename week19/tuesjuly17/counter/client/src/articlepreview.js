@@ -1,17 +1,13 @@
 import React, {Component} from 'react';
-import axios from 'axios';
-import ReactDOM from 'react-dom';
-import { BrowserRouter, Link} from 'react-router-dom';
+
+
 
 class ArticlePreview extends Component {
-    constructor(props) {
-        super(props);
-    }
+    
 render() {
     if (this.props.post) {
       return (
         <div className="article">
-          <a href={"/blog/" + this.props.post.ID} className="blackLink">
             {this.props.post.featured_image ? (
               <img
                 className="img-responsive webpic"
@@ -22,8 +18,8 @@ render() {
               ""
             )}
             <h1 className="text-center">{this.props.post.title}</h1>
-            
-          </a>
+            <div className="content">{this.props.post.excerpt}</div>
+            <a href={"/blog/" + this.props.post.ID} className="blackLink"><button className="btn">Read More</button></a>
          
         </div>
       );

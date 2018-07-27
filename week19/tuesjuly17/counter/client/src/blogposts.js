@@ -19,10 +19,13 @@ posts: []
     }
    
     render() {
+        var blogPosts= this.state.posts.map(post => {
+        return <ArticlePreview key={post.id} post= {post}/>
+    });
         
         return (
            <div>
-                {this.state.posts.map(post => <ArticlePreview post= {post}/>)}
+                {blogPosts.slice(0,3)}
              </div>   
         );
     }

@@ -1,0 +1,14 @@
+.skills{
+    background-color: #eee;
+}
+.box{
+    display:flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+    margin-bottom: 30px;
+}
+.icon {
+    font-size: 50px;
+    color: #262626;
+}
