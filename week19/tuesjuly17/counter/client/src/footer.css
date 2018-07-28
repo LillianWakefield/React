@@ -1,0 +1,56 @@
+nav.navbar {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 0 #ddd;
+    box-shadow: 0 1px 0 #ddd;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+  }
+  
+  p.social {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  p.social a {
+    margin: 0 25px 0 0;
+    color: #fff;
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    line-height: 38px;
+    font-size: 15px;
+    text-align: center;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    vertical-align: bottom;
+  }
+  
+  p.social a i {
+    vertical-align: bottom;
+    line-height: 38px;
+  }
+  
+  p.social a.linkedin {
+    background-color: #D4D2A5;
+  }
+  
+  p.social a.wordpress {
+    background-color: #5E5768;
+  }
+  
+  p.social a.github {
+    background-color: #928779;
+  }
+  
+  p.social a.file {
+    background-color: #3A445D;
+  }
+  
+  p.social a.email {
+    background-color: #E6CAAD;
+  }
+  
