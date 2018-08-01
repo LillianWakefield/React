@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import ArticlePreview from './articlepreview.js'
+import { Column, Row } from 'simple-flexbox';
 
 class BlogPosts extends Component {
     constructor(props) {
@@ -24,9 +25,22 @@ posts: []
     });
         
         return (
-           <div>
-                {blogPosts.slice(0,3)}
-             </div>   
+        <section id="skills">
+      <div className="container">
+      <Row horizontal='center'>
+            <h2 className="heading">Recent Blog Posts</h2>
+          </Row>
+          <Row>
+              {blogPosts[0]}
+              </Row>
+              <Row>
+              {blogPosts[1]}
+              </Row>
+              <Row>
+              {blogPosts[2]}
+              </Row>
+             </div>  
+        </section>
         );
     }
 }

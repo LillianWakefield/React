@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-
+import './projects.css';
+import { Column, Row } from 'simple-flexbox';
 
 
 class ArticlePreview extends Component {
@@ -8,6 +9,7 @@ render() {
     if (this.props.post) {
       return (
         <div className="article">
+        <Column className="col-lg-6 box">
             {this.props.post.featured_image ? (
               <img
                 className="img-responsive webpic"
@@ -17,10 +19,13 @@ render() {
             ) : (
               ""
             )}
-            <h1 className="text-center">{this.props.post.title}</h1>
-            <div className="content">{this.props.post.excerpt}</div>
-            <a href={"/blog/" + this.props.post.ID} className="blackLink"><button className="btn">Read More</button></a>
-         
+            </Column>
+            <Column className="col-lg-6">
+            <h5>{this.props.post.title}</h5>
+            <p className="lead">{this.props.post.date}</p>
+            <p>{this.props.post.excerpt}</p>
+            <a target="_blank" rel="noopener noreferrer" href={this.props.post.URL}>Continue Reading</a>
+         </Column>
         </div>
       );
     } else {
