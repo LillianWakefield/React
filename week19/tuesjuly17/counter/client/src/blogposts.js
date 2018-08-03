@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
 import ArticlePreview from './articlepreview.js'
-import { Column, Row } from 'simple-flexbox';
+import { Row } from 'simple-flexbox';
 
 class BlogPosts extends Component {
     constructor(props) {
@@ -25,22 +25,28 @@ posts: []
     });
         
         return (
-        <section id="skills">
-      <div className="container">
-      <Row horizontal='center'>
-            <h2 className="heading">Recent Blog Posts</h2>
-          </Row>
-          <Row>
-              {blogPosts[0]}
-              </Row>
-              <Row>
-              {blogPosts[1]}
-              </Row>
-              <Row>
-              {blogPosts[2]}
-              </Row>
-             </div>  
-        </section>
+            <section id="skills">
+                <div className="container">
+                     <Row horizontal='center'>
+                        <h2 className="heading">Recent Blog Posts</h2>
+                    </Row>
+                    <Row>
+                        <div>
+                            {blogPosts[0]}
+                        </div>
+                    </Row>
+                    <Row>
+                        <div>
+                            {blogPosts[1]}
+                        </div>
+                    </Row>
+                    <Row>
+                        <div>
+                            {blogPosts[2]}
+                        </div>
+                    </Row>
+                </div>  
+            </section>
         );
     }
 }

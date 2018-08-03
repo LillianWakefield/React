@@ -1,31 +1,31 @@
 import React, {Component} from 'react';
-import './projects.css';
-import { Column, Row } from 'simple-flexbox';
-
+import './app.css';
+import { Column } from 'simple-flexbox';
 
 class ArticlePreview extends Component {
     
 render() {
+  var year = this.props.post.date.slice(0,4);
+  var month = this.props.post.date.slice(5,7);
+  var day = this.props.post.date.slice(8,10);
+  var ExcerptIn= this.props.post.excerpt;
+  var excerptOut= ExcerptIn.replace("<p>","").replace("[&hellip;]</p>","").replace("&#8217;","'"); 
+  
     if (this.props.post) {
       return (
-        <div className="article">
-        <Column className="col-lg-6 box">
+        <div>
+          <Column className="col-lg-6 box">
             {this.props.post.featured_image ? (
-              <img
-                className="img-responsive webpic"
-                alt="article header"
-                src={this.props.post.featured_image}
-              />
+              <img className="img-responsive" alt="article header" src={this.props.post.featured_image}/>
             ) : (
               ""
             )}
-            </Column>
-            <Column className="col-lg-6">
+          </Column>
+          <Column className="col-lg-6">
             <h5>{this.props.post.title}</h5>
-            <p className="lead">{this.props.post.date}</p>
-            <p>{this.props.post.excerpt}</p>
-            <a target="_blank" rel="noopener noreferrer" href={this.props.post.URL}>Continue Reading</a>
-         </Column>
+            <p className="lead">{month}/{day}/{year}</p>
+            <p>{excerptOut} <a target="_blank" rel="noopener noreferrer" href={this.props.post.URL}>[continue reading]</a></p>
+         </Column> 
         </div>
       );
     } else {

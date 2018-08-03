@@ -8,6 +8,11 @@ nav.navbar {
     position: fixed;
     z-index: 999;
   }
+  p.copy {
+    text-align: center;
+    color: #777;
+    font-style: italic;
+  }
   
   p.social {
     text-align: center;

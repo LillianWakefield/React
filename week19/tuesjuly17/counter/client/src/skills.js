@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import './skills.css';
-import { Column, Row } from 'simple-flexbox';
+import { Row } from 'simple-flexbox';
 
 class Skills extends Component {
     render() {
         return (
-            <section id="skills">
+    <section id="skills">
       <div className="container">
-      <Row horizontal='center'>
-            <h2 className="heading">Skills</h2>
-          </Row>
+        <Row horizontal='center'>
+          <h2 className="heading">Skills</h2>
+        </Row>
             <div className="row">
               <div className="col-md-3">
                 <div className="box">
