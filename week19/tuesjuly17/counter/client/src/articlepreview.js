@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './app.css';
+import './App.css';
 import { Column } from 'simple-flexbox';
 
 class ArticlePreview extends Component {

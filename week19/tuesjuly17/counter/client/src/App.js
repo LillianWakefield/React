@@ -12,7 +12,7 @@ class App extends Component {
     <link rel="shortcut icon" href="img/terminal.ico"/>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
                 <div className="Site-content">
-                    <div className="App-header">
+                    <div>
                         <NavBar />
                     </div>
                 </div>

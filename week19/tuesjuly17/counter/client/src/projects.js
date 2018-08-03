@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './app.css';
+import './App.css';
 import picapup from './img/picapup.png';
 import chislango from './img/chislango.png';
 import { Column, Row } from 'simple-flexbox';
